@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: "/login",
+    redirectTo: '/login',
     pathMatch: 'full'
   },
   {
@@ -16,6 +16,6 @@ const appRoutes: Routes = [
     path: 'dashboard',
     component: DashboardComponent
   }
-]
+];
 
 export default appRoutes;
