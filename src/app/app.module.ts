@@ -1,16 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import appRoutes from './app.routing'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
-const appRoutes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  }
-]
 
 @NgModule({
   declarations: [
@@ -19,6 +15,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       appRoutes
     )
@@ -26,4 +23,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
